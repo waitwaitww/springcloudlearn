@@ -1,0 +1,8 @@
+#系统级配置  application 用户级配置
+spring:
+  cloud:
+    config:
+      name: config-clent  #需要从git上读取的资源的名称
+      uri: https://localhost:3344
+      profile: dev
+      label: master
