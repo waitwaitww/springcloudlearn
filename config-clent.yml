@@ -1,0 +1,32 @@
+spring:
+  profiles: 
+  active: dev
+
+---
+#spring
+spring:
+  profiles: dev
+  application:
+    name: springcloud-provider
+
+
+#Eureka 配置
+eureka:
+
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+---
+#spring
+spring:
+  profiles: test
+  application:
+    name: springcloud-provider
+
+
+#Eureka 配置
+eureka:
+
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
